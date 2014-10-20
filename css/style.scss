@@ -1,0 +1,1047 @@
+@import 'starter';
+@import 'grid';
+
+
+
+@font-face {
+	font-family: "Journal";
+}
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+   {
+   	font-family: 'varela, round' sans-serif;
+   }
+
+body {
+	font-size: 13px;
+	font-family: 'muli';
+	
+}
+
+h2 {
+	font-size: 30px;
+}
+
+
+$gold: #e4b248;
+$lightgrey: rgb(241,241,241);
+
+.mini {
+	background: #3d3838;
+	width: 100%;
+	padding-top: 1px;
+	font-size: 10px;
+	list-style-type: none;
+	padding: 10px;
+	color: white;
+	p {
+		width: 50%;
+		float: left;
+		margin: 0;
+		margin-left: 20px;
+
+	}
+    
+	// ul {
+	// 	list-style: none;
+	// 	float: none;
+	// 	margin: 0;
+
+
+	// }
+
+	li {
+		
+		padding-right: 26px;
+
+	}
+ }
+
+ li img.flag {
+ 	width: 5%;
+	margin-left: 6px;
+	padding-bottom: 0px;
+	margin-right: -244px;
+ }
+
+.mini img {
+	margin-left: 9px;
+	margin-bottom: -15px;
+}
+
+.topMini ul {
+	@include column(4);
+	list-style: none;
+	margin-left: 0;
+}
+
+
+.container {
+	max-width: 1200px;
+	width: 90%; 
+	margin: 0 auto;
+}
+
+
+.top-logo {
+	position: absolute;
+	top: 14px;
+    left: 92px;
+}
+
+.hero {
+	padding: 320px;
+	background-image: url("http://www.hotel-grandmajestic.cz/files/hotel/grand-majestic-prague/lobby-grand-majestic-plaza-hotel-01.jpg") ;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	// position: relative;
+	width: 100%;
+
+}
+
+.nav {
+	background: #322c2c;
+	position: relative;
+	padding: 13px;
+	height: 84px;
+
+
+	ul {
+		list-style: none;
+		text-align: right;
+		font-size: 10px;
+
+	}
+	li {
+		display: inline-block;
+		padding: 22px 7px;
+		position: relative;
+	}
+	li:hover a {
+		background: black;
+		color: $gold;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+		padding: 34px 17px;
+		font-size: 12px;
+		a:after {
+			content: '';
+			width: 20px;
+			height: 2px;
+			background: white;
+		}
+
+	}
+	
+
+}
+
+ul.sub-nav {
+	display: none;
+	position: absolute;
+	margin-left: 0;
+	top: 100%;
+	left: 0;
+	padding: 0;
+}
+
+ul.sub-nav li {
+	display: list-item;
+	list-style-type: none;
+	margin-top: 6px;
+	margin-bottom: -20px;
+}
+
+
+nav li:hover ul {
+	display: block;
+	text-align: left;
+	padding: 2px 0;
+	a {
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+}
+
+
+.booking {
+	background-color: rgb(31,30,30);
+	p {
+		color: white;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+}
+     
+
+     // PARADISE SECTION STARTS HERE
+ 
+ .paradise-intro {
+ 	margin: 30px 0;
+ 	span {
+ 		color: $gold;
+ 	}
+ }
+
+p.head1 {
+ 	font-size: 30px;
+ 	padding-bottom: 20px;
+ }
+
+p.head2 {
+	font-size: 20px;
+	margin-bottom: 20px;
+} 
+
+.welcome {
+	@include column(10);
+	@include push(1);
+	text-align: center;
+	margin-top: 40px;
+}
+
+.grids {
+	clear: both;
+	h3 {
+		margin-bottom: 10px;
+		& + p { //same as h3 + p (in grids)
+			margin-top: 0;
+		}
+	}
+}
+
+.block1 > .galleryImg {
+ 		width: 400px;
+ 		height: 250px;
+ 	}
+
+.block2 p,
+.block3 p {
+	line-height: 25px;
+}
+
+.dots {
+	@include column(4);
+	@include push(4);
+	li {
+		display: inline-block;
+   }
+
+} 	
+
+.grid {
+	@include column(4);
+	// border: 1px solid red;
+}
+
+.date {
+	@include column(3);
+}
+
+.article {
+	@include column(9);
+	margin-bottom: 24px;
+	p {
+		margin-top: 0;
+
+	}
+}
+
+.news2 {
+	margin-top: 30px;
+}
+
+
+p.head22 {
+	@include column(10);
+	@include push(1);
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+
+
+.grid1 {
+	@include column(4);
+}
+
+         // BOOKING AND FORM STARTS HERE
+
+.formholder {
+  display: inline-block;
+  margin-right: 4%;
+}
+
+.formholder input {
+	border: 1px solid #957737;
+}
+
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.cal input[type='text'] {
+  padding: 4px;
+  width: 187px;
+  background: rgb(31,30,30);
+  background-image: url(../images/calendarGold.png);
+  background-repeat: no-repeat;
+  background-position: 161px 2px
+}
+
+.arrow input[type='text'] {
+  padding: 4px;
+  background: rgb(31,30,30);
+  background-image: url(../images/dropdownGold.png);
+  background-repeat: no-repeat;
+  background-position: 103px 7px;
+  width: 118px;
+
+}
+
+.searchButton {
+	width: 118px;
+	padding: 5px;
+	background: $gold;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+}
+
+// FORM SECTION ENDS HERE
+ 
+.booking-form {
+	padding-bottom: 20px;
+}
+
+.book {
+	color: white;
+	height: 40px;
+	padding: 12px;
+	border-right: 3px solid rgb(35,34,34);
+	float: left;
+	margin-top: 25px;
+	margin-right: 22px;
+	padding-bottom: 40px;
+	margin-bottom: 0;
+	float: left;
+	img {
+		float: left;
+		margin-right: 15px;
+	}
+}
+
+.icon1 {
+	width: 24%;
+	margin-left: 65px;
+}   
+
+.icon2 {
+	width: 20%;
+} 
+
+.icon3 {
+	width: 14%;
+}
+
+.icon4 {
+	width: 22%;
+	border-right: none;
+}    
+       // COMMERCE SECTION ENDS HERE
+
+
+.outer-color {
+  width: 100%;
+  // padding: 36px; 
+  position: relative;
+
+}
+
+.theFirst > .prev {
+	background: rgb(254,254,255);
+}
+
+.theSecond > .prev {
+	background: rgb(254,254,255);
+}
+
+.theThird > .prev {
+	background: rbg(250,244,238);
+}
+
+.book-now {
+	width: 81px;
+	height: 20px;
+	background: $gold;
+	text-align: center;
+	padding: 2px;
+	float: right;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.outer-rate {
+	margin-top: 20px;
+	padding-bottom: 50px;
+}
+
+.rate {
+	float: left;
+	width: 100px;
+	height: 20px;
+	display: inline;
+	h4 {
+		color: $gold;
+		font-size: 20px;
+	}
+	span {
+		color: #ddd;
+		font-size: 12px;
+	}
+}
+
+
+.prev {
+ position: absolute;
+ padding: 11px;
+ top: 71%;
+ left: 50%;
+ width: 101%;
+ opacity: 0.8;
+ background: white;
+ transform: translateX(-50%);
+
+}
+
+.par {
+	margin-top: 20px;
+}
+
+
+
+.leftIcon {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+       // PARADISE SECTION ENDS HERE
+
+.contact {
+	// background: rgb(241,239,227);
+	padding: 320px;
+	background-image: url("http://croatia.hr/Images/t900x600-16011/croatia_kvarner_selce_hotel_amabilis_007.jpg") ;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	padding: 100px;
+
+}
+
+.outer-circle {
+	position: absolute;
+	top: -32px;
+	left: 49%;
+	transform: translateX(-50%);
+}
+
+.circle-block {
+	@include column(4);
+	background: white;
+	text-align: center;
+	padding: 49px 10px 45px 10px;
+	line-height: 29px;
+	position: relative;
+	color: rgb(167,167,167);
+}
+
+	p.head3 {
+		color: black;
+		font-size: 20px;
+	}
+
+.circle {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: rgba(77,93,98,0.9);
+	position: relative;
+	img {
+		position: absolute;
+		top: 25px;
+		left: 23px;
+		width: 34%;
+	}
+}
+                 // END OF CONTACT SECTION
+
+				// SIGN-UP SECTION STARTS HERE
+
+.sign-up {
+	padding: 100px;
+
+}
+
+
+.signImg {
+	@include column(2);
+	@include push(5);
+	margin-top: -55px;
+	img {
+		@include push(5);
+	}
+
+}
+
+.sign-wrapper {
+	padding-top: 38px;
+	border-top: 2px solid $lightgrey;
+}
+
+.sign1 {
+	@include column(4);
+}
+
+.sign {
+	@include column(4);
+}
+
+.sign-form {
+	@include column(7);
+	@include push(2.5);
+	padding-top: 22px;
+	p {
+		font-size: 17px;
+		font-face: 'Journal', sans-serif; 
+		src:url(journal.ttf); 
+	}
+	input {
+		padding: 5px;
+		border: 2px solid $lightgrey;
+		font-size: 10px;
+	}
+	
+}
+
+.signButton {
+	@include column(2.5);
+	padding: 7px 74px 7px 12px;
+	background: $gold;
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 12px;
+
+	}
+}
+ 
+ 			// SIGN-UP SECTION ENDS HERE
+
+ 			// FOOTER STARTS HERE 
+
+.footer ul {
+	padding-top: 15px;
+	list-style-type: none;
+	line-height: 30px;
+	text-align: left;
+}
+
+.contactInfo img {
+	@include column(2);
+	width: 7%;
+
+}
+
+.info-block {
+	text-align: left;
+	margin-left: 31px;
+	margin-top: -10px;
+} 
+
+
+.footer {
+	padding: 37px;
+	padding-bottom: 0;
+	background: rgb(245,245,245);
+	color: rgb(167,167,167);
+	h4 {
+		color: black;
+	}
+
+}
+
+.footer-block {
+	@include column(2.4);
+}
+
+.logo {
+	padding-top: 30px;
+}
+
+.inner-footer {
+	@include column(5);
+
+}
+
+.social {
+	@include column(5);
+	@include push(2);
+		ul {
+			padding: 0;
+			text-align: right;
+
+			li {
+				display: inline-block;
+				h4 {
+					margin-right: 10px;
+					color: rgb(167,167,167);
+				}
+
+			}
+		}
+	}
+
+.social img {
+	width: 80%;
+}
+
+
+.bottom-footer {
+	font-size: 10px;
+	display: inline;
+	width: 100%;
+	float: left;
+	address {
+		padding-top: 8px;
+	}
+}
+
+  					// MEDIA QUERY
+
+
+@media (max-width: 1270px) {
+	.form-box {
+		margin-right: 1%;
+	}
+
+}
+
+@media (max-width: 1270px) {
+	.formholder {
+		margin-right: 2%;
+	}
+}
+
+@media (max-width: 1094px) {
+	.formholder {
+		margin-right: 0%;
+	}
+}
+
+@media (max-width: 963px) {
+	.formholder {
+		display: block;
+		@include column(4);
+		@include push(4);
+	}
+
+	.searchButton {
+		margin-top: 13px;
+    }
+
+	.booking-form {
+		padding-bottom: 0;
+	}
+
+	.arrow input[type='text'] {
+		width: 187px;
+		background-position: 164px 7px;
+	}
+
+    .icon1 {
+    	margin-left: 74px;
+    }
+
+
+	.book {
+		margin-right: 11px;
+		h4 {
+			margin-left: 30px;
+		}
+	}
+
+	.grid {
+		margin-bottom: 20px;
+	}
+
+}	
+
+@media (max-width: 950px) {
+	.nav li {
+		padding: 22px 0px;
+	}
+
+
+}
+
+@media (max-width: 946px) {
+	 .form-box {
+	 	float: none;
+	 	margin-top: 0;
+
+	 }
+
+    .form1 {
+    	width: 24%;
+    }
+
+
+
+	 .form-box1 {
+	 	width: 24%;
+	}
+
+	 .bookingIcon {
+	 	right: 77%;
+	 }
+
+	 .bookIcon {
+	 	position: absolute;
+	 	left: 10%;
+
+	 }
+}
+
+@media (max-width: 874px) {
+	.prev {
+		top: 64%;
+	}
+	.logo {
+		@include column(12);
+		float: none;
+		// @include push(4);
+		// @include pull(4);
+	}
+
+	.footer-block {
+		padding-top: 30px;
+		float: none;
+		text-align: left;
+		@include column(4);
+		ul {
+			text-align: left;
+		}
+	}
+
+	
+	.contactInfo {
+			@include column(4);
+			@include pull(2);
+			margin-left: 0;
+			img {
+				width: 4%;
+			}
+		}
+
+	.site {
+		@include column(4);
+		@include push(1);
+		@include pull(1);
+
+     }	
+
+     .bottom-footer {
+     	padding-top: 20px
+     }
+
+}
+
+@media (max-width: 864px) {
+	.nav a {
+        padding: 35px 13px;
+	}
+}
+
+@media (max-width: 817px) {
+	.prev {
+		top: 57%;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 807px) {
+	
+	nav li {
+		padding: 22px 0;
+	}
+
+	li .under {
+		margin-left: 21px;
+		padding: 19px 15px 33px 14px;
+
+	}
+
+	.nav { 
+		height: 268px;
+		   li {
+			@include column(5);
+			@include push(4);
+			@include pull(3);
+			
+			text-align: left;
+			padding: 13px 0;
+				a {
+					padding: 9px 13px;
+				}
+		}
+
+}	
+
+    
+
+    nav li ul {
+    	-webkit-transition: width 3s;
+    	display: none;
+
+    }
+
+
+    ul.sub-nav li {
+    	padding-top: 27px;
+    }
+
+   nav li:hover ul {
+    	width: 445px;
+   }
+   
+   nav li ul {
+   		// margin-top: -50px;
+
+   }
+
+
+	.nav a {
+		-webkit-transition: padding 1s;
+	}
+
+	.nav li:hover a {
+		padding-right: 25px;
+		margin: 5px 0;
+		
+	}
+
+	li .under {
+		margin-left: 0;
+	}
+
+	.top-logo {
+		left: 30px;
+	}
+
+}
+
+@media (max-width: 790px) {
+	.grid1,
+	.grid,
+	.circle-block {
+		display: block;
+		float: none;
+		@include column(10);
+		@include push(1);
+		@include pull(1);
+		
+	}
+
+	.block2,
+	.block3 {
+		margin-bottom: 25px;
+
+	}
+
+	.news2 {
+		margin-top: 60px;
+	}
+
+	.prev {
+		top: 82%;
+	}
+
+	.circle-block {
+		display: block;
+		float: none;
+		@include column(12);
+		margin-bottom: 46px;
+		
+    }
+
+    .contact {
+    	padding-bottom: 10px 0;
+    }
+	
+	.sign-form {
+		@include column(12);
+	}
+
+	.contactInfo img {
+		width: 6%;
+	}
+
+	.book {
+		margin-right: -10px;
+	}
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 676px) {
+	.mini ul {
+	@include column(4);
+	@include pull(3);
+	float: none;
+  }
+  	.mini p {
+  		width: 33%;
+  	}
+
+  	.book {
+  		display: none;
+  	}
+
+  	.searchButton {
+  		margin-bottom: 10px;
+  	}
+}
+
+@media (max-width: 600px) {
+	.prev {
+		top: 75%;
+	}
+
+	.info-block {
+		margin: 0;
+	}
+
+	.footer-block {
+		@include column(4);
+		@include push(4);
+		@include pull(4);
+	}
+
+	// .sign-form {
+	// 	@include column(4);
+	// 	@include push(4);
+	// 	@include pull(4);
+	// }
+
+	.sign,
+	.signButton {
+		display: block;
+		float: none;
+		@include column(5);
+		@include push(3);
+		@include pull(3);
+		margin-bottom: 10px;
+	}
+
+	.signButton a {
+		padding: -1px 64px 1px 25px;
+		padding-top: 5px;
+		padding-left: 0px;
+	}
+}
+
+@media (max-height: 550px) { 
+	.nav { 
+		height: 268px;
+		   li {
+			@include column(4);
+			@include push(4);
+			@include pull(3);
+			text-align: left;
+			padding: 13px 0;
+				a {
+					padding: 9px 13px;
+				}
+		}
+    }
+
+    top.logo {
+	
+    }
+  }
+
+
+@media (max-width: 400px){
+	.mini ul {
+		@include column(4);
+		@include push(3);
+	}
+
+	li img.flag {
+		// width: 4%;
+		margin-left: 43px;
+		padding-bottom: 0;
+		margin-right: -245px;
+	}
+
+	.social {
+	@include column(6);
+	@include pull(6);
+
+    }
+
+    .signButton {
+		padding: 4px 108px 0px 52px;
+	    a {
+	    	padding-left: 0px;
+	    }
+    }
+
+
+
+    .sign-form input {
+    	width: 160px;
+    }
+
+    .footer-block {
+    	@include column(6);
+    	@include push(3);
+    	@include pull(3);
+    }	
+
+    .social {
+    	@include column(5);
+    	@include push(2);
+    	padding-bottom: 30px;
+
+    }
+
+}
+
+
+
+
