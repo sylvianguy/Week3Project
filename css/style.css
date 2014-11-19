@@ -267,7 +267,7 @@ li img.flag {
 }
 
 .hero {
-  padding: 320px;
+  height: 500px;
   background-image: url("http://www.hotel-grandmajestic.cz/files/hotel/grand-majestic-prague/lobby-grand-majestic-plaza-hotel-01.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1116,7 +1116,7 @@ p.head3 {
     padding-left: 0px;
   }
 }
-@media (max-height: 550px) {
+@media (max-width: 550px) {
   .nav {
     height: 268px;
   }
@@ -1134,6 +1134,39 @@ p.head3 {
     padding: 9px 13px;
   }
 }
+@media (max-width: 500px) {
+  .mini {
+    padding: 22px;
+    position: relative;
+  }
+
+  .top-logo {
+    left: 316px;
+    top: -70px;
+  }
+
+  ul.sub-nav li {
+    display: none;
+  }
+
+  .nav li {
+    margin-left: 0;
+  }
+
+  .contact {
+    padding: 7%;
+    padding-top: 48px;
+  }
+}
+@media (max-width: 460px) {
+  .top-logo {
+    left: 273px;
+  }
+
+  .nav li {
+    width: 35%;
+  }
+}
 @media (max-width: 400px) {
   .mini ul {
     display: inline;
@@ -1141,12 +1174,6 @@ p.head3 {
     width: 30.55556%;
     margin: 0 1.38889%;
     margin-left: 26.38889%;
-  }
-
-  li img.flag {
-    margin-left: 43px;
-    padding-bottom: 0;
-    margin-right: -245px;
   }
 
   .social {
@@ -1157,11 +1184,21 @@ p.head3 {
     margin-right: 51.38889%;
   }
 
+  .hero {
+    padding: 0;
+    height: 400px;
+  }
+
   .signButton {
     padding: 4px 108px 0px 52px;
   }
   .signButton a {
     padding-left: 0px;
+  }
+
+  .formholder {
+    margin-left: 7%;
+    margin-right: 35%;
   }
 
   .sign-form input {
@@ -1184,5 +1221,43 @@ p.head3 {
     margin: 0 1.38889%;
     margin-left: 18.05556%;
     padding-bottom: 30px;
+  }
+
+  .book {
+    display: none;
+  }
+
+  .prev {
+    top: 65%;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .top-logo {
+    left: 240px;
+  }
+}
+@media (max-width: 320px) {
+  .nav li {
+    width: 50%;
+  }
+
+  .prev {
+    top: 65%;
+  }
+
+  .top-logo {
+    left: 196px;
+  }
+
+  .sign {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    padding: 13px;
   }
 }
